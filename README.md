@@ -37,5 +37,5 @@ with timer:
 7
 8
 9
-[02/12/2022 04:03:30 PM] [INFO] Time taken to complete operations: 5.0582042s 10.0755204s
+[02/12/2022 04:03:30 PM] [INFO] Time taken to complete operations: 10.0755204s
 ```
