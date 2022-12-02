@@ -1,5 +1,6 @@
 # a simple class to record time taken for something to complete
 import time
+import logging
 
 
 class Stopwatch(object):
@@ -9,6 +10,11 @@ class Stopwatch(object):
     """
 
     def __init__(self, print_time=True):
+        logging.basicConfig(
+            level=logging.INFO,
+            datefmt="%d/%m/%Y %I:%M:%S %p",
+            format="[%(asctime)s] [%(levelname)s] %(message)s",
+        )
         self.print_time = print_time
         self.start = 0
         self.time_taken = 0
@@ -19,4 +25,4 @@ class Stopwatch(object):
     def __exit__(self, *args):
         self.time_taken = time.perf_counter() - self.start
         if self.print_time:
-            print(f"Time taken to complete operations: {self.time_taken}s")
+            logging.info(f"Time taken to complete operations: {self.time_taken}s")
