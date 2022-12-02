@@ -14,7 +14,7 @@ A repo containing an object that be wrapped to record time taken for operations 
 from timer import Stopwatch
 import time
 
-timer = Stopwatch()
+timer = Stopwatch(True)
 
 with timer:
     for x in range(10):
@@ -33,5 +33,5 @@ with timer:
 7
 8
 9
-Time taken to complete operations: 10.0755204s
+[02/12/2022 04:03:30 PM] [INFO] Time taken to complete operations: 5.0582042s 10.0755204s
 ```
