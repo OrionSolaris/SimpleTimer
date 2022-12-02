@@ -1,7 +1,7 @@
-from timer.timer import StopwatchKafka
+from timer.timer import Stopwatch
 import time
 
-timer = StopwatchKafka(True)
+timer = Stopwatch(True)
 
 with timer:
     for x in range(5):
