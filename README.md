@@ -4,12 +4,14 @@ A repo containing an object that be wrapped to record time taken for operations 
 
 ## To Use
 
-- Import from the timer.py file the Stopwatch object and initialise it, setting it to *False* if you do not wish to see a log of the time taken
+- Install requirements using `pip install -r requirements.txt`
+- Import from the timer.py file the Stopwatch object and initialise it, setting it to _False_ if you do not wish to see a log of the time taken
 - Simply use a 'with' statement with the object and add all operation inside of the statement
 
-
 ## Example
+
 ### Code
+
 ```
 from timer import Stopwatch
 import time
@@ -21,7 +23,9 @@ with timer:
         time.sleep(1)
         print(x)
 ```
+
 ### Output
+
 ```
 0
 1
